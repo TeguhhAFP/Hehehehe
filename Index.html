@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun Tiara! 🎉</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body class="font-poppins bg-gradient-to-br from-pink-200 via-purple-200 to-indigo-200 min-h-screen flex items-center justify-center overflow-hidden">
+
+    <!-- LAYAR PERTAMA -->
+    <div id="intro-screen" class="relative z-10 flex flex-col items-center justify-center w-full min-h-screen p-4 text-center transition-opacity duration-700">
+        <div class="floating text-6xl md:text-8xl mb-6 cursor-pointer" onclick="openSurprise()">
+            🎁
+        </div>
+
+        <h1 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-2">
+            Ada kejutan buat kamu...
+        </h1>
+
+        <p class="text-gray-600 mb-8 text-sm md:text-base">
+            Sentuh kadonya atau klik tombol di bawah ya!
+        </p>
+
+        <button onclick="openSurprise()" class="bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-transform transform hover:scale-105 active:scale-95 heartbeat text-lg">
+            Buka Kejutan ✨
+        </button>
+    </div>
+
+    <!-- LAYAR KEDUA -->
+    <div id="main-screen" class="hidden absolute inset-0 z-20 flex items-center justify-center p-4 overflow-y-auto">
+        <div class="bg-white/40 backdrop-blur-md border border-white/50 shadow-2xl rounded-3xl p-8 max-w-md w-full text-center transform scale-95 opacity-0 transition-all duration-1000" id="card">
+
+            <div class="text-5xl mb-4">🎂</div>
+
+            <h2 class="text-lg md:text-xl text-gray-700 font-semibold mb-1 tracking-wider uppercase">
+                Selamat Ulang Tahun
+            </h2>
+
+            <h1 class="font-script text-4xl md:text-5xl text-pink-600 font-bold mb-6 leading-tight">
+                Bq Tiara<br>Permata Sari
+            </h1>
+
+            <div class="w-16 h-1 bg-pink-400 mx-auto rounded-full mb-6"></div>
+
+            <p class="text-gray-700 mb-6 leading-relaxed text-sm md:text-base">
+                Selamat bertambah usia, orang baik! Semoga di umur yang baru ini kamu selalu diberikan kesehatan, kebahagiaan yang melimpah, dan segala doa serta harapanmu segera terkabul.
+                <br><br>
+                Tetap jadi dirimu yang cantik dan luar biasa ya! 💖
+            </p>
+
+            <div class="mt-8 pt-6 border-t border-gray-300/50">
+                <p class="text-xs text-gray-500 mb-1">
+                    Salam manis dari yang paling ganteng,
+                </p>
+
+                <p class="font-script text-2xl text-purple-700 font-bold">
+                    Teguh Ganteng 😎
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
